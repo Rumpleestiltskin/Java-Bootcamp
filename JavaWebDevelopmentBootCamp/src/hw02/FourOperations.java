@@ -6,16 +6,16 @@ public class FourOperations {
 
 		FourOperation calculator = new FourOperation();
 
-		int sum = calculator.Add(1, 5, 6, 7);
+		int sum = calculator.add(1, 5, 6, 7);
 		System.out.println(sum);
 
-		int substract = calculator.Substract(2, 3, 5);
+		int substract = calculator.substract(2, 3, 5);
 		System.out.println(substract);
 
-		int multiply = calculator.Multiply(6, 5, 2);
+		int multiply = calculator.multiply(6, 5, 2);
 		System.out.println(multiply);
 
-		double divide = calculator.Divide(-40, 0, 4);
+		double divide = calculator.divide(-40, 0, 4);
 		System.out.println(divide);
 
 	}
@@ -24,7 +24,7 @@ public class FourOperations {
 
  	class FourOperation {
 
-	public int Add(int... numbers) {
+	public int add(int... numbers) {
 
 		int sum = 0;
 
@@ -36,7 +36,7 @@ public class FourOperations {
 		return sum;
 	}
 
-	public int Substract(int... numbers) {
+	public int substract(int... numbers) {
 
 		int diff = numbers[0];
 
@@ -47,7 +47,7 @@ public class FourOperations {
 		return diff;
 	}
 
-	public int Multiply(int... numbers) {
+	public int multiply(int... numbers) {
 
 		int result = 1;
 
@@ -60,7 +60,7 @@ public class FourOperations {
 		return result;
 	}
 
-	public double Divide(double... numbers) {
+	public double divide(double... numbers) {
 
 		double result = numbers[0];
 

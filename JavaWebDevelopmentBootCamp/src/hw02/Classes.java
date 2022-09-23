@@ -9,9 +9,9 @@ public class Classes {
 
 		customerManager = customerManager2;
 
-		customerManager.Add();
-		customerManager.Remove();
-		customerManager.Update();
+		customerManager.add();
+		customerManager.remove();
+		customerManager.update();
 
 		// STACK-HEAP
 		// value type'lar stackte oluşur heaple alakası yok
@@ -35,16 +35,16 @@ public class Classes {
 	}
 
 	public static class CustomerManager {
-		public void Add() {
+		public void add() {
 			System.out.println("Customer Added");
 		}
 		
-		public void Remove() {
+		public void remove() {
 			System.out.println("Customer Removed");
 			
 		}
 		
-		public void Update() {
+		public void update() {
 			System.out.println("Customer Updated");
 			
 			
