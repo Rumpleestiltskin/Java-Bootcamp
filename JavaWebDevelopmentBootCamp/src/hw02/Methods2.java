@@ -3,17 +3,21 @@ package hw02;
 public class Methods2 {
 
 	public static void main(String[] args) {
+		
 		String message = "Bugün hava çok güzel.";
 		message.substring(0,2);
+		
 		String newMessage = returnCity();
 		System.out.println(newMessage);
+		
 		int number = sum(15,7);
 		System.out.println(number);
+		
 		int sum = sumAll(2,3,4,5,6,10);
 		System.out.println(sum);
 
 	}
-	//Voidlerin return ü yok.
+	//Voidler de  return yok.
 	public static void add() {
 		System.out.println("Added");
 	}
