@@ -48,14 +48,16 @@ public class InMemoryLanguageRepository implements LanguageRepository {
 
 	@Override
 	public void delete(int id) {
-		for (Language language : languages) {
-			if (language.getId() == id) {
-
-				languages.remove(language);
-			}
-
-		}
-
+		getAll().remove(getById(id));
+		
+		
+		/*
+		 * for (Language language : languages) { if (language.getId() == id) {
+		 * 
+		 * languages.remove(language); }
+		 * 
+		 * }
+		 */
 	}
 
 	@Override
